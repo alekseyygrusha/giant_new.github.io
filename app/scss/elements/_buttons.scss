@@ -1,0 +1,55 @@
+.button {
+    padding: 5px 25px;
+    background-color: white;
+    border-radius: 17px;
+    color: #222222;
+    font-weight: 500;
+    line-height: 24px;
+    font-family: Roboto;
+}
+
+.button_start {
+    padding: 10px 25px;
+    color: #222222;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eeeeee;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.arrow:hover {
+    background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    color: white;
+    transition: .4s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.buy_now {
+    margin: 20px auto 30px auto;
+    width: 139px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+    font-family: Roboto;
+    padding: 10px 45px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.95px;
+}
+
+.buy_now:hover {
+    background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    color: white;
+    transition: .3s;
+}

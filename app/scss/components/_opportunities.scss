@@ -1,0 +1,40 @@
+.opportunities {
+    margin: 120px 0;
+    .advantages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include respond-to(xl) {
+            justify-content: space-around;
+        }
+        
+        .advantages_item {
+            max-width: 350px;
+            display: flex;
+            margin-bottom: 60px;
+            min-height: 83px;
+            .advantages_text {
+                max-width: 240px;
+                .advantages_title {
+                    padding-bottom: 20px;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    font-family: Dosis;
+                }
+            }
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 74px;
+                height: 74px;
+                border: 1px solid #eeeeee;
+                background-color: #f7fafc;
+                border-radius: 50%;
+                margin-right: 25px;
+            }
+
+        }
+    }
+}

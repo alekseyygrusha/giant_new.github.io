@@ -1,0 +1,44 @@
+.customer {
+    padding-bottom: 120px;
+    .slider {
+        .item:nth-child(even) {
+            background-color: #f7fafc;
+        }
+        .item {
+            padding: 40px;
+            max-width: 360px;
+            margin: 0 15px;
+            p {
+                padding: 0px 0 30px 0px;
+            }
+
+            .author {
+               display: flex;
+                    .photo {
+                        width: 80px;
+                        height: 80px;
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 50%;
+                    }
+
+                    .author_name {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding-left: 20px;
+                    }
+            }
+
+            .inc {
+                padding: 0;
+            }
+        }
+
+        @include respond-to(lg) {
+            button {
+                display: none !important;
+            }
+        }
+    }
+}

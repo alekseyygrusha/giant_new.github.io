@@ -1,0 +1,56 @@
+.download {
+    background: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    padding-bottom: 120px;
+    h2 {
+        margin: 0 auto;
+        padding: 120px 0 80px 0;
+        text-align: center;
+        color: #ffffff;
+        font-family: Dosis;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+
+    .content_section {
+        display: flex;
+        justify-content: space-between;
+        @include respond-to(xl) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .download_item {
+            width: 100%;
+            max-width: 360px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            border-radius: 3px;
+            background-color: #ffffff;
+            @include respond-to(xl) {
+               margin-bottom: 30px;
+            }
+             
+            .icon {
+                color: #777777;
+                font-size: 52px;
+                height: 115px;
+                display: flex;
+                align-items: center;
+                padding: 0 36px;
+                // i {
+                //     
+                // }
+            }
+
+        }
+
+        .download_item:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.9);
+            cursor: pointer;
+            transition: .3s;
+        }
+
+       
+    }
+}

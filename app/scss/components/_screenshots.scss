@@ -1,0 +1,34 @@
+.screenshots {
+    background-color: #f7fafc;
+    height: 900px;
+    overflow: hidden;
+    .content_section {
+        max-width: 1320px;
+        
+        
+        .slider_wrap {
+            position: relative !important;
+            margin-top: 240px;
+            max-width: 1320px;
+            @include respond-to(lg) {
+                margin-top: 200px;
+            }
+            #prev {
+                position: absolute;
+                left: 0;
+                top: 50%;
+            }
+            #next {
+                position: absolute;
+                right: 0;
+                top: 50%;
+            }
+            @include respond-to(lg) {
+                button {
+                    display: none !important;
+                }
+            }
+            
+        }
+    }
+}

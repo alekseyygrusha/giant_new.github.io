@@ -1,0 +1,37 @@
+.video_section {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .black {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #000000;
+        opacity: 0.7;
+        z-index: 99;
+    }
+    .play {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        z-index: 9999999;
+        color: white;
+        font-size: 24px;
+        background: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    }
+
+    .play:hover {
+        cursor: pointer;
+        transition: .5s;
+    }
+}
+

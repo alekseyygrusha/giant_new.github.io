@@ -1,0 +1,41 @@
+.stranded {
+    .content_section {
+        position: relative;
+        border-top: 2px solid #eeeeee;
+        .background_image {
+            position: absolute;
+            left: 0;
+            top: 139px;
+            width: 362px;
+            height: 469px;
+            @include respond-to(lg) {
+                display: none;
+            }
+        }
+
+        
+        .content_text {
+            max-width: 512px;
+            margin: 175px 0px 175px auto;
+            @include respond-to(md) {
+                margin: 75px 0px 75px auto;
+            }
+            p {
+                padding: 25px 0;
+            }
+            .subtitle_list {
+                color: #777777;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                .sutitle_list_item {
+                    padding-bottom: 20px;
+                }
+                i {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    
+
+    .header_navigation {
+        display: flex;
+        justify-content: space-between;
+        max-width: 440px;
+        width: 100%;
+        align-items: center;
+        @include respond-to(lg) {
+            display: none;
+        }
+    }
+    .logo_wrap {
+        width: 128px;
+        height: 40px;
+    }
+
+    .mobile_menu_wrap {
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        right: -300px;
+        width: 300px;
+        padding-top: 80px;
+        background-color: white;
+        // height: 100%;
+        z-index: 9;
+        
+       
+        .mobile_menu_navigation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+            .mobile_menu_item {
+                padding-bottom: 40px;
+                font-size: 20px;
+                color: black;
+            }
+
+            .mobile_menu_item:hover {
+                color: #fc6b32;
+            }
+
+            .download_mow {
+                font-size: 14px;
+                color: black;
+                padding-bottom: px;
+            }
+        }
+    }
+    .mobile_menu {
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        display: none;
+        z-index: 999;
+        @include respond-to(lg) {
+            display: block;
+        }
+        .hamburger_button {
+            
+            .hamburger_button_item {
+                margin-bottom: 5px;
+                width: 30px;
+                height: 3px;
+                background-color: white;
+            }
+        }
+
+        .hamburger_button:hover {
+            cursor: pointer;
+        }
+
+        .active {
+            .hamburger_button_item {
+                background-color: #7777;
+            }
+            .hamburger_button_item:nth-child(even) {
+                visibility: hidden;
+            }
+            .hamburger_button_item:first-child {
+                transform-origin: left;
+                transform: rotate(32deg);
+            }
+
+            .hamburger_button_item:last-child {
+                transform-origin: left;
+                transform: rotate(-32deg);
+            }
+        }
+        
+    }
+
+    .close {
+        transition: .3s;
+        right: -300px;
+    }
+
+    .open {
+        transition: .3s;
+        right: 0;
+    }
+    
+
+}

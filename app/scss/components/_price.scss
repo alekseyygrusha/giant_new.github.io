@@ -1,0 +1,96 @@
+.price_section {
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+        @include respond-to(xl) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .cards_item {
+            width: 262px;
+            text-align: center;
+            background-color: #f7fafc;
+            padding-bottom: 40px;
+            .cards_item_option {
+                padding: 15px 0 18px 0;
+            }
+
+            @include respond-to(xl) {
+                margin: 15px;
+            }
+
+            @include respond-to(sm) {
+                margin: 5px;
+                margin-bottom: 15px;
+            }
+            
+            .price_block {
+                background-image: url(/img/white_background.png);
+                height: 120px;
+                display: flex;
+                .price {
+                    padding: 0;
+                    margin: 0;
+                    padding-top: 20px;
+                    color: #333333;
+                    font-family: Dosis;
+                    font-size: 48px;
+                    font-weight: 500;
+                    position: relative;
+                    
+                    height: 70px;
+                   
+                    margin: 0 auto;
+                    .price_dollar,
+                    .price_month
+                     {
+                        font-size: 18px;
+                        position: absolute;
+                    }
+                    .price_dollar {
+                        top: 20px;
+                        left: -10px;
+                        
+                    }
+                    .price_month {
+                        font-size: 18px;
+                        bottom: 0;
+                    }
+                }
+
+                
+            }
+
+            
+
+            .cards_item_list {
+                margin: 40px 0 40px 0;
+                li {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    width: 205px;
+                    margin: 0 auto;
+                    border-bottom: 4px dotted #f0f0f0;
+                }
+            }
+            .free_trial {
+                margin-bottom: 20px;
+            }
+            
+        }
+    }
+
+    .cards_item:hover {
+        background-color: #ffffff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        .price_block {
+            background-image: url(/img/gradient_background.png);
+            .price {
+                color: #ffffff;
+            }
+        }
+
+        
+    }
+}

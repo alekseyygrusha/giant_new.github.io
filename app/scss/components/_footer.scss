@@ -1,0 +1,23 @@
+.footer {
+    background-color: #222222;
+    height: 180px;
+    display: flex;
+    text-align: center;
+        .footer_socials {
+            max-width: 154px;
+            display: flex;
+            justify-content: space-between;
+            margin: 60px auto 30px auto;
+           
+            a {
+                color: #ffffff;
+                font-family: "Font Awesome";
+                font-size: 18px;
+            }
+
+            a:hover {
+                color: #f31f79;
+            }
+        }
+        
+}
