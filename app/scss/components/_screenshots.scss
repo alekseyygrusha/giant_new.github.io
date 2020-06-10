@@ -1,18 +1,51 @@
 .screenshots {
     background-color: #f7fafc;
     height: 900px;
-    overflow: hidden;
+    // overflow: hidden;
+    @include respond-to(md) {
+        height: 700px;
+    }
     .content_section {
         max-width: 1320px;
+       
         
+
+        @include respond-to(md) {
+            .intro_text {
+                padding-bottom: 20px;
+            }
+        }
         
         .slider_wrap {
-            position: relative !important;
-            margin-top: 240px;
-            max-width: 1320px;
-            @include respond-to(lg) {
-                margin-top: 200px;
+            position: relative;
+            // margin-top: 240px;
+            // max-width: 1320px;
+            #carousel {
+                padding: 0 auto;
+                width: 100%;
+                max-width: 960px;
+                height: 500px;
+                position: relative;
+                clear: both;
+                overflow: hidden;
+                background-color: #f7fafc;
+                margin: 0 auto;
+                 
+
+                 @include respond-to(md) {
+                    height: 410px;
+                    img {
+                        max-width: 200px;
+                    }
+                }
+                    
             }
+            @include respond-to(lg) {
+                .arrow{
+                    display: none;
+                }
+            }
+            
             #prev {
                 position: absolute;
                 left: 0;
@@ -23,11 +56,7 @@
                 right: 0;
                 top: 50%;
             }
-            @include respond-to(lg) {
-                button {
-                    display: none !important;
-                }
-            }
+            
             
         }
     }
